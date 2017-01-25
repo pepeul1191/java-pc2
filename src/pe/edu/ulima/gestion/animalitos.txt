@@ -1,0 +1,132 @@
+ID::NOMBRE::NOMBRE CIENTIFICO::AÑOS DE VIDA::PESO EN KG::HABITAD::LOCOMOCION::ALIMENTACION
+1::Whale Blue::Balaenoptera musculus::110::181568::Marine::Swimming::Herbivore
+2::Shark whale::Rhincodon typus::59::16341.12::Marine::Swimming::Carnivore
+3::Elephant African::Loxodonta africana::24::5900::Terrestrial::Walking::Herbivore
+4::Elephant Indian::Elephas maximus::70::4000::Terrestrial::Walking::Herbivore
+5::Giraffe male::Giraffa camelopardalis::25::800::Terrestrial::Walking::Herbivore
+6::Mule::Equus asinus X Equus caballus::20::680.88::Terrestrial::Walking::Herbivore
+7::Camel::Camelus bactrianus::45::550::Terrestrial::Walking Gallop::Herbivore
+8::Horse::Equus caballus::35::453.92::Terrestrial::Walking::Herbivore
+9::Cow::Bos taurus::17::453.92::Terrestrial::Walking::Herbivore
+10::Dolphin Bottlenose::Tursiops truncatus::30::400::Marine::Swimming::Carnivore
+11::Donkey::Equus asinus::20::363.14::Terrestrial::Walking::Herbivore
+12::Tapir::Tapirus terrestris::30::317.74::Terrestrial::Walking::Herbivore
+13::Shark Hammerhead::Sphyrna zygaena::18::272.35::Marine::Swimming::Carnivore
+14::Seal fur::Callorhinus ursinus::13::272.35::Marine::Swimming::Carnivore
+15::Manatee::Trichechus manatus::15::250::Marine Aquatic::Swimming::Herbivore
+16::Bear Grizzly::Ursus horribilis::25::230::Terrestrial::Walking::Omnivore
+17::Alligator American::Alligator mississipiensis::56::226.96::Aquatic::Walking Swimming::Carnivore
+18::Sturgeon Atlantic::Acipenser sturio::50::226.96::Aquatic Marine::Swimming::Carnivore
+19::Lion::Panthera leo::20::200::Terrestrial::Walking::Carnivore
+20::Bear American Black::Ursus americanus::25::175::Terrestrial::Walking::Omnivore
+21::Ostrich::Struthio camelus::50::125::Terrestrial::Walking::Herbivore
+22::Crocodile Saltwater::Crocodylus porosus::13::113.4::Marine::Swimming::Carnivore
+23::Pig::Sus scrofa::16::102::Terrestrial::Walking::Omnivore
+24::Sheep::Ovis aries::15::79.44::Terrestrial::Walking::Herbivore
+25::Dog Saint Bernard::Canis familiaris::20::72.63::Terrestrial::Walking::Carnivore
+26::Human::Homo sapiens::72::69::Terrestrial::Walking::Omnivore
+27::Deer white-tailed::Odocoileus virginianus::12::51.2::Terrestrial::Walking::Herbivore
+28::Tuna::Thunnus thynnus::7::45.36::Marine::Swimming::Carnivore
+29::Salamander Japanese::Megolobatrachus japonicus::60::40.85::Aquatic::Swimming Walking::Insectivore
+30::Carp::Cyprinus carpio::6::38::Aquatic::Swimming::Herbivore
+31::Dog Foxhound::Canis familiaris::23::29.5::Terrestrial::Walking::Carnivore
+32::Goat Milch::Capra hircus::15::28::Terrestrial::Walking::Herbivore
+33::Sting Ray::Dasyatis americana::5::27.24::Marine::Swimming::Carnivore
+34::Dog Pointer::Canis familiaris::18::24.97::Terrestrial::Walking::Carnivore
+35::Kangaroo Red::Macropus rufus::17::24::Terrestrial::Walking::Herbivore
+36::Cod Atlantic::Gadus callarias::13::22.7::Marine::Swimming::Carnivore
+37::Dog Collie::Canis familiaris::20::22.7::Terrestrial::Walking::Carnivore
+38::Pike Northern::Esox lucius::24::19.06::Aquatic::Swimming::Carnivore
+39::Trout brown::Salmo trutta::18::18.16::Aquatic::Swimming::Carnivore
+40::Dog Basset Hound::Canis familiaris::22::18.16::Terrestrial::Walking::Carnivore
+41::Turkey::Meleagris gallopavo::12::18.16::Terrestrial::Walking Flight::Herbivore
+42::Porcupine::Erethizon dorsatum::11::18.16::Terrestrial::Walking::Herbivore
+43::Trout Rainbow::Salmo gairdneri::4::18.16::Aquatic::Swimming::Carnivore
+44::Gar longnose::Lepisosteus osseus::30::18::Aquatic::Swimming::Carnivore
+45::Beaver::Castor canadensis::16::13::Aquatic::Walking Swimming::Herbivore
+46::Dog Irish Terrier::Canis familiaris::19::11.8::Terrestrial::Walking::Carnivore
+47::Dog Beagle::Canis familiaris::20::11.35::Terrestrial::Walking::Carnivore
+48::Bass Large Mouth Black::Micropterus salmoides::11::10.1::Aquatic::Swimming::Carnivore
+49::Dog Whippet::Canis familiaris::20::9.99::Terrestrial::Walking::Carnivore
+50::Dog Boston Terrier::Canis familiaris::12::9.08::Terrestrial::Walking::Carnivore
+51::Nutria::Myocastor coypus::4::9.08::Terrestrial::Swimming Walking::Herbivore
+52::Dog Fox Terrier::Canis familiaris::18::7.26::Terrestrial::Walking::Carnivore
+53::Armadillo Nine-banded::Dasypus novemcinctus::13::6.81::Terrestrial::Walking::Insectivore Herbivore
+54::Fox Arctic::Alopex lagopus::8::6::Terrestrial::Walking::Carnivore
+55::Woodchuck (Groundhog)::Marmota monax::10::4.54::Terrestrial::Walking::Herbivore
+56::Rabbit Domestic::Lepus cuniculus::6::4.09::Terrestrial::Walking::Herbivore
+57::Chicken::Gallus gallus domesticus::15::3.86::Terrestrial::Walking Flight::Herbivore
+58::Dog Pekingese::Canis familiaris::16::3.63::Terrestrial::Walking::Carnivore
+59::Haddock::Melanogrammus aeglefinus::15::3.3::Marine::Swimming::Carnivore
+60::Cat domestic::Felis catus::15::3.3::Terrestrial::Walking::Carnivore
+61::Salmon Chum::Oncorhynchus keta::4::2.72::Marine Aquatic::Swimming::Carnivore
+62::Vulture Turkey::Cathartes aura::118::2.27::Terrestrial::Flight::Carnivore
+63::Opossum Large American::Didelphis marsupialis::7::2.27::Terrestrial::Walk ing::Omnivore
+64::Flounder Winter::Pseudopleuronectes americanus::1::2.27::Marine::Swimming::Carnivore
+65::Pheasant Ringnecked::Phasianus colchicus::27::2.04::Terrestrial::Flight Walking::Herbivore
+66::Perch::Perca fluviatilis::10::1.95::Aquatic::Swimming::Carnivore
+67::Duck Mallard::Anas platyrhynchos::19::1.7::Aquatic::Flight Swimming::Insectivore Herbivore
+68::Mackerel Spanish::Scomberomorus maculatus::5::1.59::Marine::Swimming::Carnivore
+69::Platypus Duck-billed::Ornithorhynchus anatinus::15::1.25::Aquatic::Swimming::Insectivore Carnivore
+70::Sea lamprey::Petromyzon marinus::7::1.14::Marine Aquatic::Swimming::Carnivore
+71::Bullhead Brown::Ictalurus nebulosus::9::1.13::Aquatic::Swimming::Carnivore
+72::Mink American::Mustela vison::10::1.05::Terrestrial::Walking::Carnivore
+73::Falcon Peregrin::Falco peregrinus::12::0.96::Terrestrial::Flight::Carnivore
+74::Goshawk::Accipiter gentilis::13::0.96::Terrestrial::Flight::Carnivore
+75::Bat Flying fox::Pteropus vampyrus::17::0.9::Terrestrial::Flight::Omnivore
+76::Duck Wood::Aix sponsa::5::0.68::Aquatic::Flight Swimming::Herbivore Insectivore
+77::Buzzard::Buteo buteo::100::0.66::Terrestrial::Flight::Carnivore
+78::Bass Rock::Ambloplites rupestris::8::0.57::Aquatic::Swimming::Carnivore
+79::Squirrel Gray::Sciurus carolinensis::15::0.55::Terrestrial::Climbing Walking::Herbivore
+80::Guinea Pig::Cavia cobaya::8::0.45::Terrestrial::Walking::Herbivore
+81::Rat Norway::Rattus norvegicus::4::0.45::Terrestrial::Walking::Omnivore
+82::Gull Herring::Larus argentatus::44::0.38::Terrestrial Marine::Flight Walking::Carnivore
+83::Crow Hooded::Corvus cornix::4::0.36::Terrestrial::Flight::Omnivore
+84::Rook::Frugilegus::7::0.34::Terrestrial::Flight::Omnivore
+85::Pumpkinseed::Lepomis gibbosus::3::0.31::Aquatic::Swimming::Carnivore
+86::Pigeon::Columba livia::16::0.27::Terrestrial::Flight Walking::Herbivore
+87::Guinea fowl::Numida melearis::30::0.25::Terrestrial::Flight Walking::Herbivore
+88::Quail Bobwhite::Colinus virginianus::8::0.17::Terrestrial::Walking Flight::Insectivore Herbivore
+89::Magpie Black-billed::Pica pica::12::0.15::Terrestrial::Flight::Omnivore
+90::European Jackdaw::Monedula::4::0.14::Terrestrial::Flight::Omnivore
+91::Hamster::Cricetus cricetus::2::0.12::Terrestrial::Walking::Herbivore
+92::Kestrel lesser::Falco naumanni::5::0.11::Terrestrial::Flight::Carnivore
+93::Hawk Night::Chordeles minor::4::0.11::Terrestrial::Flight Walking::Carnivore
+94::Chipmunk Eastern::Tamias striatus::5::0.1::Terrestrial::Walking::Herbivore
+95::Bat little brown::Myotis lucifugus::10::0.1::Terrestrial::Flight::Insectivore
+96::Starling Common::Sturnus vulgaris::7::0.09::Terrestrial::Flight::Omnivore
+97::Frog leopard::Rana pipiens::6::0.04::Aquatic::Hopping Swimming::Carnivore
+98::Weasel least::Mustela rixosa::20::0.04::Terrestrial::Walking::Carnivore
+99::Mouse White-footed::Peromyscus leucopus::1::0.02::Terrestrial::Running::Omnivore
+100::Mouse House::Mus musculus::4::0.02::Terrestrial::Walking::Herbivore
+101::Canary::Serinus canarius::24::0.02::Terrestrial::Flight::Herbivore Insectivore
+102::Hummingbird::Archilochus colubris::8::0.01::Terrestrial::Flight::Omnivore
+103::Hummingbird Cuban bee::Mellisuga helenae::3::0.01::Terrestrial::Flight::Herbivore
+104::Shrew Musked::Sorex cinereus::1::0.01::Terrestrial::Walking::Carnivore Insectivore
+105::Shrew dwarf::Suncus etruscus::5::0.01::Terrestrial::Walking::Insectivore
+106::Goby Philippine::Pandaka pygmaea::1::0.001::Marine::Swimming::Carnivore
+107::Goldfish::Carassius auratus::20::0.001::Aquatic::Swimming::Carnivore
+108::Toad American::Bufo americanus::36::0.001::Terrestrial::Jumping::Insectivore
+109::Frog Bull::Rana catesbeiana::15::0.001::Aquatic::Jumping Swimming::Carnivore Insectivore
+110::Eel American::Anguilla rostrata::10::0.001::Marine Aquatic::Swimming::Carnivore
+111::Penguin Adelie::Pygoscelis::5::0.001::Marine::Swimming Walking::Carnivore
+112::Robin::Turdus migratorius::12::0.001::Terrestrial::Flight Walking::Insectivore
+113::Kiwi::Apteryx australis::20::0.001::Terrestrial::Walking Running::Insectivore
+114::Fighting Fish Siamese::Betta splendens::10::0.001::Aquatic::Swimming::Omnivore
+115::Skate::Raja macrorhynchus::7::0.001::Marine::Swimming::Carnivore
+116::Quail Japanese/European::Coturnix coturnix::5::0.001::Terrestrial::Flight::Herbivore
+117::Gila Monster::Heloderma suspectum::25::0.001::Terrestrial::Walking::Carnivore
+118::Chameleon::Anolis carolinensis::7::0.001::Terrestrial::Walking::Insectivore
+119::Cobra Indian::Naja naja atra::12::0.001::Terrestrial::Crawling::Carnivore
+120::Boa Constrictor::Constrictor constrictor::23::0.001::Terrestrial::Crawling::Carnivore
+121::Guppy::Lebistes reticulatus::2::0.001::Aquatic::Swimming::Carnivore
+122::Salamander Tiger::Ambystome mecicanum::11::0.001::Terrestrial::Walking::Omnivore
+123::Swordtail Mexican::Xiphophorus helleri::4::0.001::Aquatic::Swimming::Carnivore
+124::Stickleback three spine::Gasterosteus aculeatus::1::0.001::Aquatic::Swimming::Carnivore
+125::Sea horse::Hippocampus hudsonius::4::0.001::Marine::Swimming::Carnivore
+126::Hellbender::Cryptobranchus alleganiensis::15::0.001::Aquatic::Swimming::Omnivore
+127::Herring Atlantic::Clupea harengus::12::0.001::Marine::Swimming::Carnivore
+128::Chameleon Madagascar::Evoluticavda::8::0.001::Terrestrial::Walking::Insectivore
+129::Frog Cuban::Sminthillud limbatus::3::0.001::Terrestrial::Walking::Insectivore
+130::Molly::Molliensia sphenops::7::0.001::Aquatic::Swimming::Carnivore
+131::Dogfish Pacific Spiny::Squalus suckleyi::3::0.001::Marine::Swimming::Carnivore
