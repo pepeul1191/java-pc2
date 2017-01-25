@@ -22,3 +22,9 @@ PREGUNTA 2:
 SELECT AVG(A.anios) AS promedio, L.nombre 
 FROM animales A INNER JOIN locomociones L ON A.id_locomocion = L.id
 GROUP BY L.nombre
+
+PREGUNTA 3:
+===========
+
+SELECT id, nombre_cientifico, LENGTH(nombre_cientifico) AS carateres 
+FROM animales ORDER BY carateres DESC

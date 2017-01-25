@@ -82,5 +82,26 @@ public class Gestion {
         }
         
         return aniosPromedio;
+    }
+    
+    public ArrayList<Animal> animalesNombresCientificosMasLargos(){
+        int longitudNombreCientificoMasLargo = 0;
+        ArrayList<Animal> animales = new ArrayList<Animal>();
+        
+        for(Animal a : animalitos){
+            int temp = a.getNombreCientifico().length();
+            if(temp > longitudNombreCientificoMasLargo){
+                longitudNombreCientificoMasLargo = temp;
+            }
+        }
+        
+        for(Animal a : animalitos){
+            int temp = a.getNombreCientifico().length();
+            if(temp == longitudNombreCientificoMasLargo){
+                animales.add(a);
+            }
+        }
+        
+        return animales;
     } 
 }
