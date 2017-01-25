@@ -38,5 +38,16 @@ public class Test {
         for(Animal a : animalitosNombreCientificoMasLargo){
             System.out.println(a);
         }
+        
+        System.out.println("\nPREGUNTA 4\n");
+        
+        Map<Integer, String> treeMap = g.cantidadAlimentacion();
+        
+        it = treeMap.keySet().iterator();
+        
+        while(it.hasNext()){
+            int key = (Integer)it.next();
+            System.out.println("Cantidad : " + key + " -> Alimentacion : " + treeMap.get(key));
+        }
     }
 }

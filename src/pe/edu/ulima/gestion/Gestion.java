@@ -4,9 +4,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.TreeMap;
 import java.util.logging.Logger;
 import pe.edu.ulima.beans.Animal;
 
@@ -103,5 +105,38 @@ public class Gestion {
         }
         
         return animales;
-    } 
+    }
+    
+    public Map<Integer, String> cantidadAlimentacion(){
+        Map<Integer, String> cantidadAlimentacion = new TreeMap<Integer, String>();
+        HashSet<String> alimentaciones = new HashSet<String>();
+        
+        for(Animal a : animalitos){
+            alimentaciones.add(a.getAlimentacion());
+        }
+        
+        Iterator iterator = alimentaciones.iterator(); 
+      
+        // check values
+        while (iterator.hasNext()){
+            String alimentacion = (String)iterator.next();
+            int cantidad = cantidadSegunAlimentacion(alimentacion);
+            
+            cantidadAlimentacion.put(cantidad, alimentacion);
+        }
+        
+        return cantidadAlimentacion;
+    }
+    
+    private int cantidadSegunAlimentacion(String alimentacion){
+        int cantidad = 0;
+        
+        for(Animal a : animalitos){
+            if(a.getAlimentacion().equalsIgnoreCase(alimentacion)){
+                cantidad = cantidad + 1;
+            }
+        }
+    
+        return cantidad;
+    }
 }

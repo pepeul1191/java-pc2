@@ -9,8 +9,7 @@ ORDER BY id
 PREGUNTA 1:
 ==========
 
-SELECT A.id, CONCAT(A.id,'::',A.nombre,'::',A.nombre_cientifico,'::',A.anios,'::',
-A.peso_kg,'::',H.nombre,'::',L.nombre,'::',AL.nombre) AS animal
+SELECT A.id, A.nombre, A.nombre_cientifico, A.anios, A.peso_kg, H.nombre AS habitad , L.nombre AS locomocion, AL.nombre AS alimentacion
 FROM animales A 
 INNER JOIN habitads H ON A.id_habitad = H.id 
 INNER JOIN locomociones L ON A.id_locomocion = L.id
@@ -28,3 +27,11 @@ PREGUNTA 3:
 
 SELECT id, nombre_cientifico, LENGTH(nombre_cientifico) AS carateres 
 FROM animales ORDER BY carateres DESC
+
+PREGUNTA 4:
+===========
+
+SELECT COUNT(A.id_alimentacion) AS cantidad, AL.nombre AS alimentacion FROM
+animales A INNER JOIN alimentaciones AL ON A.id_alimentacion = AL.id 
+GROUP BY AL.nombre
+ORDER BY cantidad;
