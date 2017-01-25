@@ -1,0 +1,24 @@
+SELECT A.id, CONCAT(A.id,'::',A.nombre,'::',A.nombre_cientifico,'::',A.anios,'::',
+A.peso_kg,'::',H.nombre,'::',L.nombre,'::',AL.nombre) AS animal
+FROM animales A 
+INNER JOIN habitads H ON A.id_habitad = H.id 
+INNER JOIN locomociones L ON A.id_locomocion = L.id
+INNER JOIN alimentaciones AL ON A.id_alimentacion = AL.id
+ORDER BY id
+
+PREGUNTA 1:
+==========
+
+SELECT A.id, CONCAT(A.id,'::',A.nombre,'::',A.nombre_cientifico,'::',A.anios,'::',
+A.peso_kg,'::',H.nombre,'::',L.nombre,'::',AL.nombre) AS animal
+FROM animales A 
+INNER JOIN habitads H ON A.id_habitad = H.id 
+INNER JOIN locomociones L ON A.id_locomocion = L.id
+INNER JOIN alimentaciones AL ON A.id_alimentacion = AL.id
+ORDER BY id
+
+PREGUNTA 2:
+===========
+SELECT AVG(A.anios) AS promedio, L.nombre 
+FROM animales A INNER JOIN locomociones L ON A.id_locomocion = L.id
+GROUP BY L.nombre

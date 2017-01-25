@@ -1,6 +1,9 @@
 package pe.edu.ulima.test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 import pe.edu.ulima.beans.Animal;
 import pe.edu.ulima.gestion.Gestion;
 
@@ -13,12 +16,18 @@ public class Test {
         g.cargar("C:\\Documentos\\PP\\animalitos.txt");
         
         ArrayList<Animal>animalitos = g.lista();
-        
+        System.out.println("\nPREGUNTA 1\n");
         for(Animal a : animalitos){
-            if(a != null){
-                System.out.println(a);
-            }
+            System.out.println(a);
+        }
+        
+        System.out.println("\nPREGUNTA 2\n");
+        HashMap<String,Float> aniosPromedio = g.aniosPromedio();
+        Iterator it = aniosPromedio.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry pair = (Map.Entry)it.next();
+            System.out.println(pair.getKey() + " = " + pair.getValue());
+            it.remove(); // avoids a ConcurrentModificationException
         }
     }
-    
 }

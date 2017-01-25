@@ -3,6 +3,9 @@ package pe.edu.ulima.gestion;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Scanner;
 import java.util.logging.Logger;
 import pe.edu.ulima.beans.Animal;
@@ -44,5 +47,40 @@ public class Gestion {
     
     public ArrayList<Animal> lista(){
         return animalitos;
+    }
+    
+    public HashMap<String,Float> aniosPromedio(){
+        HashMap<String,Float> aniosPromedio = new HashMap<String,Float>();
+        HashMap<String,Integer> cantidad = new HashMap<String,Integer>();
+        HashMap<String,Integer> aniosAcumulados = new HashMap<String,Integer>();
+        
+        for(Animal a : animalitos){
+            String locomocion = a.getLocomocion();
+            int aniosVida = a.getAniosVida();
+            
+            if(cantidad.containsKey(locomocion)){
+                int tempCantidad = cantidad.get(locomocion);
+                int tempAniosAcumulados = aniosAcumulados.get(locomocion);
+                
+                cantidad.put(locomocion, tempCantidad + 1);
+                aniosAcumulados.put(locomocion, tempAniosAcumulados + aniosVida);
+            }else{   
+                cantidad.put(locomocion, 1);
+                aniosAcumulados.put(locomocion, aniosVida);
+            }
+        }
+        
+        Iterator it = cantidad.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry pair = (Map.Entry)it.next();
+            String locomocion = (String)pair.getKey();
+            int aniosAcumuladosTemp = aniosAcumulados.get(locomocion);
+            int cantidadTemp = cantidad.get(locomocion);
+            aniosPromedio.put(locomocion, (aniosAcumuladosTemp*1f/cantidadTemp));
+            
+            it.remove(); // avoids a ConcurrentModificationException
+        }
+        
+        return aniosPromedio;
     } 
 }
