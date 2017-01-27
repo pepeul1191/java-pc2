@@ -13,7 +13,7 @@ public class Test {
         
         System.out.println("\nPREGUNTA 1\n");
         
-        g.cargar("C:\\Documentos\\PP\\animalitos.txt");
+        g.cargar("C:\\Documentos\\PP\\java-pc2\\src\\pe\\edu\\ulima\\gestion\\animalitos.txt");
         ArrayList<Animal>animalitos = g.lista();
         
         for(Animal a : animalitos){
@@ -48,6 +48,13 @@ public class Test {
         while(it.hasNext()){
             int key = (Integer)it.next();
             System.out.println("Cantidad : " + key + " -> Alimentacion : " + treeMap.get(key));
+        }
+        
+        System.out.println("\nPREGUNTA 3 - Nueva\n");
+        ArrayList<Animal> animalitosCaracteres = g.listaPorParametro('u');
+        
+        for(Animal a : animalitosCaracteres){
+            System.out.println(a);
         }
     }
 }

@@ -139,4 +139,58 @@ public class Gestion {
     
         return cantidad;
     }
+    
+    public ArrayList<Animal> listaPorParametro(char caracter){
+        HashMap<String,Integer> coincidenciasgetNombreCientifico = new HashMap<String,Integer>();
+        caracter = Character.toUpperCase(caracter);
+        int mayor = 0;
+        ArrayList<Animal> rpta = new ArrayList<Animal>();
+        
+        for(Animal a : animalitos){
+            String nombreCientifico = a.getNombreCientifico();
+            int coincidencias = 0;
+            
+            for(int i = 0; i < nombreCientifico.length(); i++){
+                if(nombreCientifico.charAt(i) == caracter){
+                    coincidencias = coincidencias + 1;
+                }
+            }
+            
+            if (coincidencias > mayor){
+                mayor = coincidencias;
+            }
+            
+            coincidenciasgetNombreCientifico.put(nombreCientifico, coincidencias);
+        }
+        
+        System.out.println("MAYOR : " + mayor);
+        
+        Iterator it = coincidenciasgetNombreCientifico.entrySet().iterator();
+        
+        while (it.hasNext()) {
+            Map.Entry pair = (Map.Entry)it.next();
+            String nombreCientifico = (String)pair.getKey();
+            int coindicencias = (Integer)pair.getValue();
+            
+            if(coindicencias == mayor){
+                rpta.add(animalPorNombreCientifico(nombreCientifico));
+            }
+            
+            it.remove(); // avoids a ConcurrentModificationException
+        }
+        
+        return rpta;
+    }
+    
+    private Animal animalPorNombreCientifico(String nombreCientifico){
+        Animal rpta = null;
+        
+        for(Animal a : animalitos){
+            if(a.getNombreCientifico().equalsIgnoreCase(nombreCientifico)){
+                rpta = a;
+            }
+        }
+        
+        return rpta;
+    }
 }
